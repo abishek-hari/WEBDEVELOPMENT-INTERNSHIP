@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+body {
+  background: #1d1d5a;
+}
+.container {
+  height: 100vh;
+}
+.navbar {
+  margin: 1rem 0.5rem;
+  padding: 1rem;
+  background: #fff;
+  text-align: center;
+}
+.navbar h1 {
+  font-size: 2rem;
+  color: #6d380c;
+}
+.schedule {
+  width: 35rem;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "heading heading heading "
+    "time event event  "
+    "timings events events ";
+  gap: 0.2rem;
+}
+.info {
+  grid-area: heading;
+  border: 1px solid #6d380c;
+  padding: 1rem 0;
+}
+.info h2 {
+  font-size: 1.7rem;
+  text-align: center;
+  background: #fff;
+  padding: 1rem;
+  color: #6d380c;
+}
+.info-1 {
+  grid-area: time;
+  border: 1px solid #6d380c;
+}
+.info-2 {
+  grid-area: event;
+  border: 1px solid #6d380c;
+}
+.info-3 {
+  grid-area: timings;
+  border: 1px solid #6d380c;
+}
+.info-4 {
+  grid-area: events;
+  border: 1px solid #6d380c;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+}

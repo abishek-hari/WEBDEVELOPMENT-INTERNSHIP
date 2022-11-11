@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>log in</h2>
+          <h2>sign up</h2>
+        </div>
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()"></button>
+          <button
+            type="button"
+            class="toggle-btn"
+            onclick="register()"
+          ></button>
+        </div>
+
+        <div id="login" class="input-form">
+          <h1>log in</h1>
+          <form class="form">
+            <div class="form-input">
+              <i class="fa-solid fa-at"></i>
+              <input type="text" placeholder="your email" />
+            </div>
+            <div class="form-input">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="your password" />
+            </div>
+          </form>
+          <div type="submit" class="submit-btn">submit</div>
+          <p>forget your password?</p>
+        </div>
+
+        <div id="register" class="input-form">
+          <h1>sign up</h1>
+          <form class="form">
+            <div class="form-input">
+              <i class="fa-solid fa-at"></i>
+              <input type="text" placeholder="your email" />
+            </div>
+            <div class="form-input">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="your password" />
+            </div>
+            <div class="form-input">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="your password" />
+            </div>
+          </form>
+          <div type="submit" class="submit-btn">submit</div>
+          <p>forget your password?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- script js -->
+    <script>
+      let x = document.getElementById("login");
+      let y = document.getElementById("register");
+      let z = document.getElementById("btn");
+
+      function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "35px";
+      }
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "400px";
+        z.style.left = "0px";
+      }
+    </script>
+  </body>
+</html>

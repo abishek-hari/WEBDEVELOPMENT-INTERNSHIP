@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slider</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <div class="img">
+        <img src="images/img-1.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="images/img-5.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="images/img-3.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="images/img-4.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="images/img-2.jpg" alt="" />
+      </div>
+      <i
+        id="prev"
+        onclick="show_image(-1)"
+        class="fa-solid fa-chevron-left"
+      ></i>
+      <i
+        id="next"
+        onclick="show_image(1)"
+        class="fa-solid fa-chevron-right"
+      ></i>
+    </section>
+
+    <!-- script js -->
+    <script>
+      let index = 0;
+      show_image(index);
+      function show_image(i) {
+        index += i;
+        let images = document.getElementsByClassName("img");
+        for (i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
+        if (index > images.length - 1) index = 0;
+        if (index < 0) index = images.length - 1;
+        images[index].style.display = "block";
+      }
+    </script>
+  </body>
+</html>

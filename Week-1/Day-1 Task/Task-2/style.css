@@ -1,0 +1,66 @@
+:root {
+  --aliceblue: #e9f3fa;
+  --white: #fff;
+  --black: #000;
+  --gray: #999;
+  --pink: #ffc0cb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+}
+body {
+  background: var(--aliceblue);
+}
+.container {
+  width: 1100px;
+  max-width: 500px;
+  margin: 2rem auto;
+  height: 90vh;
+  background-color: var(--white);
+  border: 2px dotted var(--black);
+}
+.form {
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.form fieldset {
+  padding: 0.8rem 1rem 1.5rem;
+  margin: 1rem 0;
+}
+.form legend {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.form .box {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  place-items: center;
+  margin: 1rem 0;
+}
+.form .box input {
+  width: 90%;
+  background: var(--pink);
+  border: 2px solid var(--gray);
+  padding: 0.4rem 0.3rem;
+  border-radius: 0.3rem;
+}
+.box label i {
+  font-size: 1.2rem;
+}
+.btn {
+  width: 100%;
+  padding: 0.3rem 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 2px solid var(--black);
+  border-radius: 0.3rem;
+}
