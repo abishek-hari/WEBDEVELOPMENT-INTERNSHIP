@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap");
+
+:root {
+  /* primary */
+  --Red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  /* Neutral */
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  /* box shadow */
+  --box-shadow: hsl(212, 100%, 89%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+.container {
+  width: 90vw;
+  height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+.container .section-info {
+  width: 35rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container .section-info h1 {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  color: var(--Very-Dark-Blue);
+}
+.container .section-info h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--Very-Dark-Blue);
+}
+.container .section-info p {
+  font-size: 0.9rem;
+  color: var(--Grayish-Blue);
+  padding: 0.5rem 0.2rem;
+}
+.container .section-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.section-cards .card {
+  background: var(--Very-Light-Gray);
+  box-shadow: 0 0.2rem 0.2rem var(--box-shadow);
+  padding: 1.8rem;
+  width: 350px;
+  border-radius: 0.3rem;
+  position: relative;
+  overflow: hidden;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+.card-cyan::after {
+  background-color: var(--cyan);
+}
+.card-red::after {
+  background-color: var(--Red);
+}
+.card-orange::after {
+  background-color: var(--Orange);
+}
+.card-blue::after {
+  background-color: var(--Blue);
+}
+.card-push {
+  transform: translateY(50%);
+}
+.card h3 {
+  font-size: 1.2rem;
+  color: var(--Very-Dark-Blue);
+}
+.card p {
+  font-size: 0.9rem;
+  color: var(--Grayish-Blue);
+  padding: 15px 0 30px;
+}
+.card img {
+  display: block;
+  margin-left: auto;
+}
