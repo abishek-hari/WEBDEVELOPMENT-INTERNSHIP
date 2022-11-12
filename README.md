@@ -1,4 +1,5 @@
 # WEBDEVELOPMENT-INTERNSHIP
+
 <h1>Week-1</h1>
 <h4>Day-1</h4>
 <p>Task-1: Awesomelogo</p>
@@ -14,3 +15,12 @@
 <p>Task-1: Flexbox</p>
 <p>Task-2: Grid</p>
 <p>Task-3: MediaQuery</p>
+<hr>
+<h4>Day-4</h4>
+<p>Task-1: Four Card Feature Section</p>
+<p>Task-2: News Homepage</p>
+<p>Task-3: Order Summary Component</p>
+<hr>
+<h4>Day-5</h4>
+<p>Task-1: Qr Code Component</p>
+<p>Task-2: Social proof Section</p>
