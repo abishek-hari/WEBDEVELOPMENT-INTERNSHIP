@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap");
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --light-blue: hsl(226, 100%, 97%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: var(--Pale-blue);
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  line-height: 1.5;
+}
+.order-card {
+  width: 350px;
+  height: 500px;
+  margin: 5% auto;
+  background: var(--Very-pale-blue);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.order-card img {
+  width: 100%;
+  object-fit: cover;
+}
+.order-info {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+.order-info h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--Dark-blue);
+  text-transform: capitalize;
+}
+.order-info p {
+  font-size: 0.9rem;
+  color: var(--Desaturated-blue);
+  padding: 0.5rem 0.1rem;
+}
+.order-info .plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--light-blue);
+  padding: 0.8rem 1rem;
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+}
+.plan img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.plan-info {
+  display: flex;
+  gap: 0.5rem;
+}
+.plan-info h5 {
+  font-size: 0.9rem;
+  color: var(--Dark-blue);
+}
+.plan-info span {
+  font-size: 0.8rem;
+  color: var(--Desaturated-blue);
+}
+.plan a {
+  font-size: 0.9rem;
+}
+.submit-btn {
+  font-size: 1rem;
+  color: var(--Very-pale-blue);
+  background: var(--Bright-blue);
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.6rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0.2rem 0.8rem var(--Desaturated-blue);
+}
+.cancel-btn {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--Desaturated-blue);
+  margin: 1rem 0;
+}
+
+@media (max-width: 425px) {
+  body {
+    background-image: url("images/pattern-background-mobile.svg");
+  }
+  .order-card {
+    max-width: 300px;
+  }
+}
